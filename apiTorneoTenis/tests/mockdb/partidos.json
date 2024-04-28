@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "jugador1": {
+      "id": 1,
+      "nombre": "Rafael Nadal",
+      "peso": 85,
+      "altura": 1.85,
+      "edad": 35,
+      "perfilATP": "https://www.atptour.com/en/players/rafael-nadal/n409/overview",
+      "pais": "Spain",
+      "titulos": {
+        "ATP": 20,
+        "Challenger": 36
+      }
+    },
+    "jugador2": {
+      "id": 2,
+      "nombre": "Novak Djokovic",
+      "peso": 77,
+      "altura": 1.88,
+      "edad": 34,
+      "perfilATP": "https://www.atptour.com/en/players/novak-djokovic/d643/overview",
+      "pais": "Serbia",
+      "titulos": {
+        "ATP": 20,
+        "Challenger": 36
+      }
+    },
+    "ganador": {
+      "id": 1,
+      "nombre": "Rafael Nadal",
+      "peso": 85,
+      "altura": 1.85,
+      "edad": 35,
+      "perfilATP": "https://www.atptour.com/en/players/rafael-nadal/n409/overview",
+      "pais": "Spain",
+      "titulos": {
+        "ATP": 20,
+        "Challenger": 36
+      }
+    },
+    "sets": [
+      {
+        "puntaje1": 6,
+        "puntaje2": 3
+      },
+      {
+        "puntaje1": 7,
+        "puntaje2": 6
+      },
+      {
+        "puntaje1": 6,
+        "puntaje2": 4
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "jugador1": {
+      "id": 3,
+      "nombre": "Roger Federer",
+      "peso": 85,
+      "altura": 1.85,
+      "edad": 40,
+      "perfilATP": "https://www.atptour.com/en/players/roger-federer/f324/overview",
+      "pais": "Switzerland",
+      "titulos": {
+        "ATP": 20,
+        "Challenger": 28
+      }
+    },
+    "jugador2": {
+      "id": 4,
+      "nombre": "Andy Murray",
+      "peso": 84,
+      "altura": 1.91,
+      "edad": 34,
+      "perfilATP": "https://www.atptour.com/en/players/andy-murray/mc10/overview",
+      "pais": "United Kingdom",
+      "titulos": {
+        "ATP": 3,
+        "Challenger": 14
+      }
+    },
+    "ganador": {
+      "id": 3,
+      "nombre": "Roger Federer",
+      "peso": 85,
+      "altura": 1.85,
+      "edad": 40,
+      "perfilATP": "https://www.atptour.com/en/players/roger-federer/f324/overview",
+      "pais": "Switzerland",
+      "titulos": {
+        "ATP": 20,
+        "Challenger": 28
+      }
+    },
+    "sets": [
+      {
+        "puntaje1": 6,
+        "puntaje2": 4
+      },
+      {
+        "puntaje1": 7,
+        "puntaje2": 6
+      }
+    ]
+  }
+]

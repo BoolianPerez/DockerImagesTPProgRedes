@@ -1,0 +1,12 @@
+<form [formGroup]="tenistaForm" (submit)="modificar()">
+    <input type="number" id="id" formControlName="id" placeholder="id">
+    <input type="text" id="Nombre" formControlName="nombre" placeholder="nombre">
+    <input type="number" formControlName="peso" id="peso" placeholder="peso">
+    <input type="number" id="altura" formControlName="altura" placeholder="altura"> 
+    <input type="number" id="edad" formControlName="edad" placeholder="edad"> 
+    <input type="text" id="perfil" formControlName="perfilATP" placeholder="perfil atp">
+    <input type="text" id="pais" formControlName="pais" placeholder="pais">
+    <input type="number" id="titulosAtp" formControlName="titulosAtp" placeholder="atp" > 
+    <input type="number" id="titulosChall" formControlName="titulosChall" placeholder="Challenger">
+    <button class="button" type="submit" >modificar</button>
+</form>

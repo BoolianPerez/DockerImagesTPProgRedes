@@ -1,0 +1,18 @@
+<div class = "container_partido">
+    <h1 class = "titulo">Partido: {{jsonData.id}}</h1>
+    <a [routerLink]="['/tenistas', jsonData.jugador1.id]">Jugador 1: {{jsonData.jugador1.nombre}}</a>
+    <a [routerLink]="['/tenistas', jsonData.jugador2.id]">Jugador 2: {{jsonData.jugador2.nombre}}</a>
+    <p>Ganador: {{jsonData.ganador.nombre}}</p>
+    <p class="titulo_sets"> Sets: </p>
+    <ul>
+        <li>{{jsonData.sets[0].puntaje1}} - {{jsonData.sets[0].puntaje2}}</li>
+        <li>{{jsonData.sets[1].puntaje1}} - {{jsonData.sets[1].puntaje2}}</li>
+        <li>{{jsonData.sets[2].puntaje1}} - {{jsonData.sets[2].puntaje2}}</li>
+        <li>{{jsonData.sets[3].puntaje1}} - {{jsonData.sets[3].puntaje2}}</li>
+        <li>{{jsonData.sets[4].puntaje1}} - {{jsonData.sets[4].puntaje2}}</li>
+    </ul>
+    <div class="button_container">
+        <button (click)="modificarPartido(jsonData.id)">Modificar</button>
+        <button (click)="eliminarPartido(jsonData.id)" >Eliminar</button>
+    </div>
+</div>

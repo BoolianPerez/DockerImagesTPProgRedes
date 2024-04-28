@@ -1,0 +1,145 @@
+{
+    "swaggerDefinition": {
+    "info": {
+        "title": "Documentacion para API de tenistas y partidos",
+        "version": "1.0.0",
+        "description": "Documentacion para API que maneja tenistas y partidos de manera RESTful"
+    },
+    "basePath": "/api", 
+    "contents": {
+        "schemas": {
+        "Partido": {
+            "type": "object",
+            "property": {
+            "PATH": { "type": "string", "format":  "file path"},
+            "id": { "type": "number" },
+            "jugador1": { "type": "Tenista" },
+            "jugador2": { "type": "Tenista" },
+            "ganador": { "type": "Tenista" },
+            "sets": { "type": "array", "items": { "type": "SetTenis" }}
+            },
+            "example": {
+                "id": 1,
+                "jugador1": {
+                    "id": 1,
+                    "peso": 80,
+                    "altura": 1.80,
+                    "edad": 25,
+                    "perfilATP": "https://www.atptour.com/en/players/roger-federer/f324/overview",
+                    "pais": "Suiza",
+                    "titulos": [
+                        {
+                        "code": "ATP",
+                        "value": 20
+                        },
+                        {
+                        "code": "Challenger",
+                        "value": 5
+                        }
+                    ]
+                },
+                "jugador2": {
+                    "id": 2,
+                    "peso": 85,
+                    "altura": 1.85,
+                    "edad": 27,
+                    "perfilATP": "https://www.atptour.com/en/players/rafael-nadal/n409/overview",
+                    "pais": "España",
+                    "titulos": [
+                        {
+                        "code": "ATP",
+                        "value": 19
+                        },
+                        {
+                        "code": "Challenger",
+                        "value": 3
+                        }
+                    ]
+                },
+                "ganador": {
+                    "id": 1,
+                    "peso": 80,
+                    "altura": 1.80,
+                    "edad": 25,
+                    "perfilATP": "https://www.atptour.com/en/players/roger-federer/f324/overview",
+                    "pais": "Suiza",
+                    "titulos": [
+                        {
+                        "code": "ATP",
+                        "value": 20
+                        },
+                        {
+                        "code": "Challenger",
+                        "value": 5
+                        }
+                    ]
+                },
+                "sets": [
+                    {
+                        "puntaje1": 6,
+                        "puntaje2": 4
+                    },
+                    {
+                        "puntaje1": 6,
+                        "puntaje2": 3
+                    },
+                    {
+                        "puntaje1": 6,
+                        "puntaje2": 2
+                    }
+                ]
+            }
+        },
+        "Tenista": {
+            "type": "object",
+            "property": {
+            "PATH": { "type": "string", "format": "file path" },
+            "id": { "type": "number" },
+            "peso": { "type": "number" },
+            "altura": { "type": "number" },
+            "edad": { "type": "number" },
+            "perfilATP": { "type": "string", "format": "http link" },
+            "pais": { "type": "string", "format": "sustantivo propio"},
+            "titulos": { 
+                "type": ["object", null],   
+                "properties": {
+                    "code": { "type": "integer" },
+                    "text": { "type": "string" }
+                }
+                }
+            },
+            "example": {
+                "id": 1,
+                "peso": 80,
+                "altura": 1.80,
+                "edad": 25,
+                "perfilATP": "https://www.atptour.com/en/players/roger-federer/f324/overview",
+                "pais": "Suiza",
+                "titulos": [
+                    {
+                    "code": "ATP",
+                    "value": 20
+                    },
+                    {
+                    "code": "Challenger",
+                    "value": 5
+                    }
+                ]
+                }
+        },
+        "Titulo": {
+            "type": "string",
+            "enum": [ "ATP", "Challenger" ]
+        },
+        "SetTenis": {
+            "type": "object",
+            "properties": {
+            "puntaje1": { "type": "number" },
+            "puntaje2": { "type": "number" }
+            }
+        }
+        }
+    }
+    },
+    "apis": ["src/routes/routers/PartidoRouter.ts", "src/routes/routers/TenistaRouter.ts"]
+}

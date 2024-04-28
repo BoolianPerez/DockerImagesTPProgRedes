@@ -1,0 +1,3 @@
+interface dataObject {
+    id: number;
+}

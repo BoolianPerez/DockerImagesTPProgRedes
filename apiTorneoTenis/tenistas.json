@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "nombre": "Rafael Nadal",
+    "peso": 85,
+    "altura": 1.85,
+    "edad": 35,
+    "perfilATP": "Left-handed, Two-handed backhand",
+    "pais": "España",
+    "titulos": {
+      "ATP": 88,
+      "Challenger": 0
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Novak Djokovic",
+    "peso": 77,
+    "altura": 1.88,
+    "edad": 34,
+    "perfilATP": "Right-handed, Two-handed backhand",
+    "pais": "Serbia",
+    "titulos": {
+      "ATP": 84,
+      "Challenger": 1
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Roger Federer",
+    "peso": 85,
+    "altura": 1.85,
+    "edad": 40,
+    "perfilATP": "Right-handed, One-handed backhand",
+    "pais": "Swiza",
+    "titulos": {
+      "ATP": 103,
+      "Challenger": 0
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Rafael Nadal",
+    "peso": 85,
+    "altura": 1.85,
+    "edad": 35,
+    "perfilATP": "Left-handed, Two-handed backhand",
+    "pais": "España",
+    "titulos": {
+      "ATP": 88,
+      "Challenger": 0
+    }
+  }
+]

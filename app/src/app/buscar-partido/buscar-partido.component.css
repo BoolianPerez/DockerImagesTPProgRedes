@@ -1,0 +1,33 @@
+.partido{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: .2rem solid rgb(140, 255, 87);
+    border-radius: 1rem;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    text-align: center;
+    align-items: center;
+}
+
+.partido:hover{
+    border: solid #ffffff;
+    background-color: rgb(140, 255, 87);
+}
+
+.link_partido{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link_partido:hover{
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container_partidos{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: auto;
+}

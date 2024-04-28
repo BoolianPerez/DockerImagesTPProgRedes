@@ -1,6 +1,6 @@
 FROM node:lts
 WORKDIR /angularapp/
-COPY ./Angular/app/ .
+COPY ./app/ .
 RUN npm install
 RUN npm install -g @angular/cli
 RUN export NG_CLI_ANALYTICS=false

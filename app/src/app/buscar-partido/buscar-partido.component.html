@@ -1,0 +1,10 @@
+<form [formGroup] = "formBusqueda" (submit)="onSubmit()">
+    <input type="text" id="tenista" formGroupName="id" placeholder="id">
+    <button type="submit">buscar</button>
+</form>
+<h1>Partidos</h1>
+<div class="container_partidos">
+    <div class="partido" *ngFor="let partido of resultados">
+        <a class="link_partido" [routerLink]="['/partidos',partido.id]">{{partido.id}}</a>
+    </div>
+</div>

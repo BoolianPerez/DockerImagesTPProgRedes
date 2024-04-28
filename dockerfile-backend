@@ -1,5 +1,5 @@
 FROM node:lts
 WORKDIR /expressapi/
-COPY ./Express/apiTorneoTenis/ .
+COPY ./apiTorneoTenis/ .
 RUN npm install
 ENTRYPOINT ["npm", "run", "dev"]

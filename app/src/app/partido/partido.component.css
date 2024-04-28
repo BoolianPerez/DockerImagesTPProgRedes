@@ -1,0 +1,54 @@
+.container_partido{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.container_partido > *:not(:first-child, .titulo_sets){
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+.titulo_sets{
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+/* Remove the dot on list objects*/
+ul{
+    padding-top: 0;
+    list-style-type: none;
+}
+li{
+    padding-left: 2rem;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+button{
+    width: 50%;
+    all: unset;
+    cursor:pointer;
+    background-color: lightgreen;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 0 1rem;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
