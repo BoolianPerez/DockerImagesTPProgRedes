@@ -1,0 +1,7 @@
+FROM node:lts
+WORKDIR /angularapp/
+COPY ./Angular/app/ .
+RUN npm install
+RUN npm install -g @angular/cli
+RUN export NG_CLI_ANALYTICS=false
+ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0", "--port", "4200"]
