@@ -7,7 +7,7 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - mi-red
+      - network
     container_name: expressapi
   front-end:
     build:
@@ -16,8 +16,8 @@ services:
     ports:
       - "4200:4200"
     networks:
-      - mi-red
+      - network
     container_name: angularapp
 networks:
-  mi-red:
-    name: mi-red
+  network:
+    name: network
