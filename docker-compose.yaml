@@ -3,7 +3,7 @@ services:
   back-end:
     build:
       context: .
-      dockerfile: dockerfile-backend
+      dockerfile: dockerfile-express
     ports:
       - "3000:3000"
     networks:
@@ -12,7 +12,7 @@ services:
   front-end:
     build:
       context: .
-      dockerfile: dockerfile-frontend
+      dockerfile: dockerfile-angular
     ports:
       - "4200:4200"
     networks:
